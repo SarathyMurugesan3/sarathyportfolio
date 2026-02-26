@@ -20,7 +20,7 @@ const contactLinks = [
         sub: '@SarathyMurugesan3',
     },
     {
-        href: 'https://linkedin.com/in/sarathy-murugesan',
+        href: 'https://www.linkedin.com/in/sarathy-m-098b6a291/',
         target: '_blank',
         icon: <Linkedin size={20} />,
         iconBg: 'rgba(0,119,181,0.2)',

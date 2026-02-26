@@ -23,7 +23,7 @@ export default function Footer() {
                             <Github size={16} />
                         </a>
                         <a
-                            href="https://linkedin.com/in/sarathy-murugesan"
+                            href="https://www.linkedin.com/in/sarathy-m-098b6a291/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="footer__social-btn"

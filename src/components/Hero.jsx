@@ -1,16 +1,17 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ArrowDown, Code2, Database, Shield } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowDown, Code2 } from 'lucide-react';
+import sarathyPhoto from '/sarathy.jpg';
 
 const badgeCards = [
     {
         icon: '💻',
-        bg: 'rgba(108,99,255,0.15)',
+        bg: 'rgba(108,99,255,0.18)',
         title: 'Full Stack Dev',
         sub: 'React · Django · Node',
     },
     {
         icon: '🔒',
-        bg: 'rgba(34,211,238,0.12)',
+        bg: 'rgba(34,211,238,0.14)',
         title: 'Data Privacy',
         sub: 'Differential Privacy',
     },
@@ -30,7 +31,7 @@ export default function Hero() {
             <div className="container">
                 <div className="hero__inner">
                     {/* Left Content */}
-                    <div>
+                    <div className="hero__content">
                         <div className="hero__badge">
                             <span className="hero__badge-dot" />
                             Available for work
@@ -53,26 +54,42 @@ export default function Hero() {
                         </p>
 
                         <div className="hero__actions">
-                            <a href="#projects" className="btn btn--primary" onClick={(e) => { e.preventDefault(); document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' }); }}>
+                            <a
+                                href="#projects"
+                                className="btn btn--primary"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                            >
                                 <Code2 size={16} />
                                 View My Work
                             </a>
-                            <a href="#contact" className="btn btn--outline" onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
+                            <a
+                                href="#contact"
+                                className="btn btn--outline"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                            >
                                 <Mail size={16} />
                                 Get In Touch
                             </a>
                         </div>
 
                         <div className="hero__stats">
-                            <div>
+                            <div className="hero__stat">
                                 <div className="hero__stat-number">3+</div>
                                 <div className="hero__stat-label">Years Coding</div>
                             </div>
-                            <div>
+                            <div className="hero__stat-divider" />
+                            <div className="hero__stat">
                                 <div className="hero__stat-number">10+</div>
                                 <div className="hero__stat-label">Projects Built</div>
                             </div>
-                            <div>
+                            <div className="hero__stat-divider" />
+                            <div className="hero__stat">
                                 <div className="hero__stat-number">5+</div>
                                 <div className="hero__stat-label">Technologies</div>
                             </div>
@@ -84,8 +101,13 @@ export default function Hero() {
                         <div className="hero__avatar-wrap">
                             <div className="hero__avatar-ring2" />
                             <div className="hero__avatar-ring" />
-                            <div className="hero__avatar-emoji">👨‍💻</div>
+                            <img
+                                src={sarathyPhoto}
+                                alt="Sarathy Murugesan"
+                                className="hero__avatar-img"
+                            />
                         </div>
+
                         {badgeCards.map((card) => (
                             <div className="hero__badge-card" key={card.title}>
                                 <div className="hero__badge-card-icon" style={{ background: card.bg }}>
@@ -97,32 +119,24 @@ export default function Hero() {
                                 </div>
                             </div>
                         ))}
+
+                        {/* Social links */}
+                        <div className="hero__social">
+                            <a href="https://github.com/SarathyMurugesan3" target="_blank" rel="noopener noreferrer" className="hero__social-btn" title="GitHub">
+                                <Github size={16} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/sarathy-m-098b6a291/" target="_blank" rel="noopener noreferrer" className="hero__social-btn" title="LinkedIn">
+                                <Linkedin size={16} />
+                            </a>
+                            <a href="mailto:sarathymurugesan@gmail.com" className="hero__social-btn" title="Email">
+                                <Mail size={16} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <button
-                onClick={scrollDown}
-                style={{
-                    position: 'absolute',
-                    bottom: '32px',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    background: 'none',
-                    border: '1px solid rgba(255,255,255,0.1)',
-                    color: 'var(--text-muted)',
-                    cursor: 'pointer',
-                    borderRadius: '99px',
-                    padding: '8px 16px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    fontSize: '0.78rem',
-                    transition: 'all 0.3s',
-                    animation: 'float 2s ease-in-out infinite',
-                    zIndex: 1,
-                }}
-            >
+            <button className="hero__scroll-btn" onClick={scrollDown}>
                 <ArrowDown size={14} /> Scroll Down
             </button>
         </section>
