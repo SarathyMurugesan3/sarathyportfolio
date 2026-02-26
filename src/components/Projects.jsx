@@ -64,14 +64,16 @@ export default function Projects() {
     return (
         <section className="section" id="projects">
             <div className="container">
-                <span className="section__tag">Projects</span>
-                <h2 className="section__title">
-                    Things I've <span>built</span>
-                </h2>
-                <p className="section__subtitle">
-                    A selection of my recent projects — from privacy-preserving systems to polished web
-                    applications.
-                </p>
+                <div className="section-header">
+                    <span className="section__tag">Projects</span>
+                    <h2 className="section__title">
+                        Things I've <span>built</span>
+                    </h2>
+                    <p className="section__subtitle">
+                        A selection of my recent projects — from privacy-preserving systems to polished web
+                        applications.
+                    </p>
+                </div>
 
                 <div className="projects__grid">
                     {projects.map((p) => (

@@ -40,14 +40,16 @@ export default function Experience() {
     return (
         <section className="section" id="experience" style={{ background: 'rgba(255,255,255,0.01)' }}>
             <div className="container">
-                <span className="section__tag">Experience</span>
-                <h2 className="section__title">
-                    My <span>journey</span>
-                </h2>
-                <p className="section__subtitle">
-                    A timeline of my professional growth, academic experience, and the projects I've poured my
-                    energy into.
-                </p>
+                <div className="section-header">
+                    <span className="section__tag">Experience</span>
+                    <h2 className="section__title">
+                        My <span>journey</span>
+                    </h2>
+                    <p className="section__subtitle">
+                        A timeline of my professional growth, academic experience, and the projects I've poured my
+                        energy into.
+                    </p>
+                </div>
 
                 <div className="experience__timeline">
                     {experiences.map((exp, i) => (

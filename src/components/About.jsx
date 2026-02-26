@@ -11,16 +11,16 @@ const skills = {
     ],
     Backend: [
         { name: 'Python', color: '#3776AB' },
-        { name: 'Django', color: '#092E20' },
-        { name: 'Django REST', color: '#A30000' },
+        { name: 'Django', color: '#44b67a' },
+        { name: 'Django REST', color: '#ea6060' },
         { name: 'Node.js', color: '#339933' },
-        { name: 'Flask', color: '#000000' },
+        { name: 'Flask', color: '#cccccc' },
     ],
     'Data & Privacy': [
         { name: 'Differential Privacy', color: '#6c63ff' },
-        { name: 'NumPy / Pandas', color: '#013243' },
+        { name: 'NumPy / Pandas', color: '#4dabcf' },
         { name: 'SQL', color: '#F29111' },
-        { name: 'SQLite / PostgreSQL', color: '#336791' },
+        { name: 'PostgreSQL', color: '#336791' },
     ],
     'Tools & DevOps': [
         { name: 'Git / GitHub', color: '#F05032' },
@@ -41,13 +41,16 @@ export default function About() {
     return (
         <section className="section" id="about">
             <div className="container">
+                <div className="section-header">
+                    <span className="section__tag">About Me</span>
+                    <h2 className="section__title">
+                        Crafting digital <span>experiences</span>
+                    </h2>
+                </div>
+
                 <div className="about__grid">
                     {/* Left: Text */}
                     <div>
-                        <span className="section__tag">About Me</span>
-                        <h2 className="section__title">
-                            Crafting digital <span>experiences</span>
-                        </h2>
                         <div className="about__text">
                             <p>
                                 I'm <strong>Sarathy Murugesan</strong>, a passionate Full Stack Developer and Data
@@ -57,7 +60,7 @@ export default function About() {
                             <p>
                                 My journey in tech has led me to work on everything from dynamic React frontends to
                                 privacy-preserving backend systems using Differential Privacy algorithms. I believe
-                                great software is not just functional—it's beautiful, fast, and trustworthy.
+                                great software is not just functional — it's beautiful, fast, and trustworthy.
                             </p>
                             <p>
                                 When I'm not coding, you'll find me exploring new technologies, contributing to open
@@ -78,15 +81,12 @@ export default function About() {
                     {/* Right: Skills */}
                     <div id="skills">
                         {Object.entries(skills).map(([category, items]) => (
-                            <div key={category} style={{ marginBottom: '24px' }}>
-                                <div className="skills__title">{category}</div>
+                            <div className="skills__category" key={category}>
+                                <div className="skills__category-title">{category}</div>
                                 <div className="skills__grid">
                                     {items.map((skill) => (
                                         <div className="skill-badge" key={skill.name}>
-                                            <span
-                                                className="skill-dot"
-                                                style={{ background: skill.color, opacity: 0.85 }}
-                                            />
+                                            <span className="skill-dot" style={{ background: skill.color }} />
                                             {skill.name}
                                         </div>
                                     ))}

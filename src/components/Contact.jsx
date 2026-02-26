@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 
 const contactLinks = [
     {
@@ -26,7 +26,7 @@ const contactLinks = [
         iconBg: 'rgba(0,119,181,0.2)',
         iconColor: '#0077b5',
         title: 'LinkedIn',
-        sub: 'Connect with me',
+        sub: 'sarathy-m-098b6a291',
     },
 ];
 
@@ -34,23 +34,29 @@ export default function Contact() {
     return (
         <section className="section" id="contact">
             <div className="container">
-                <div className="contact__inner">
+                <div className="contact__center">
                     <span className="section__tag">Contact</span>
                     <h2 className="section__title">
                         Let's <span>work together</span>
                     </h2>
-                    <p className="section__subtitle" style={{ margin: '0 auto' }}>
+                    <p className="section__subtitle">
                         I'm always open to discussing new projects, creative ideas, or opportunities to be part
-                        of your vision. Drop me a message and let's build something great!
+                        of your vision.
                     </p>
+                </div>
 
-                    {/* Primary CTA */}
+                <div className="contact__cta-box">
+                    <h3 className="contact__cta-title">Ready to build something great?</h3>
+                    <p className="contact__cta-sub">
+                        Drop me a message and I'll get back to you within 24 hours. Let's create something
+                        amazing together.
+                    </p>
                     <a
                         href="mailto:sarathymurugesan@gmail.com"
                         className="btn btn--primary"
-                        style={{ margin: '32px auto 0', display: 'inline-flex' }}
+                        style={{ display: 'inline-flex', margin: '0 auto' }}
                     >
-                        <Mail size={16} />
+                        <Mail size={17} />
                         Send Me an Email
                     </a>
 
