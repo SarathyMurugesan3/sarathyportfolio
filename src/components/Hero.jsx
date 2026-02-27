@@ -1,12 +1,12 @@
 import React from 'react';
 import { Github, Linkedin, Mail, ArrowDown, Code2 } from 'lucide-react';
-import sarathyPhoto from '/sarathy.jpg';
+import sarathyPhoto from '../assets/download.png';
 
 const badgeCards = [
     {
         icon: '🎓',
         bg: 'rgba(232,160,69,0.12)',
-        title: 'B.Tech IT — Final Year',
+        title: 'B.Tech IT — Third Year',
         sub: 'Information Technology',
     },
     {

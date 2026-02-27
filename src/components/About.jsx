@@ -32,7 +32,7 @@ const skills = {
 };
 
 const highlights = [
-    { icon: <GraduationCap size={14} />, text: 'B.Tech IT — Final Year (2025)' },
+    { icon: <GraduationCap size={14} />, text: 'B.Tech IT — Third Year (2025)' },
     { icon: <MapPin size={14} />, text: 'Tamil Nadu, India' },
     { icon: <Briefcase size={14} />, text: 'Seeking Internship / Full-time Roles' },
     { icon: <BookOpen size={14} />, text: '4 Projects · Full Stack Focus' },
@@ -54,7 +54,7 @@ export default function About() {
                     <div>
                         <div className="about__text">
                             <p>
-                                I'm a <strong>final-year B.Tech Information Technology student</strong> from Tamil
+                                I'm a <strong>third-year B.Tech Information Technology student</strong> from Tamil
                                 Nadu, India, passionate about building web applications that are both functional and
                                 well-crafted. I specialize in <strong>Java, Spring Boot, and React.js</strong>, with
                                 growing experience in Python and Django.
