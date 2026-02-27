@@ -49,7 +49,7 @@ export default function Hero() {
                         </p>
 
                         <p className="hero__desc">
-                            Final-year B.Tech Information Technology student from Tamil Nadu with hands-on
+                            Third-year B.Tech Information Technology student from Tamil Nadu with hands-on
                             experience building full-stack web applications using Java, Spring Boot, React, and
                             Django. Passionate about clean code, scalable systems, and solving real-world problems.
                         </p>
