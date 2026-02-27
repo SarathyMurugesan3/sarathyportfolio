@@ -4,16 +4,16 @@ import sarathyPhoto from '/sarathy.jpg';
 
 const badgeCards = [
     {
-        icon: '💻',
-        bg: 'rgba(108,99,255,0.18)',
-        title: 'Full Stack Dev',
-        sub: 'React · Django · Node',
+        icon: '🎓',
+        bg: 'rgba(232,160,69,0.12)',
+        title: 'B.Tech IT — Final Year',
+        sub: 'Information Technology',
     },
     {
-        icon: '🔒',
-        bg: 'rgba(34,211,238,0.14)',
-        title: 'Data Privacy',
-        sub: 'Differential Privacy',
+        icon: '💻',
+        bg: 'rgba(126,200,164,0.12)',
+        title: 'Full Stack Developer',
+        sub: 'React · Spring Boot · Django',
     },
 ];
 
@@ -34,7 +34,7 @@ export default function Hero() {
                     <div className="hero__content">
                         <div className="hero__badge">
                             <span className="hero__badge-dot" />
-                            Available for work
+                            Open to Internships &amp; Full-time Roles
                         </div>
 
                         <h1 className="hero__title">
@@ -45,12 +45,13 @@ export default function Hero() {
                         </h1>
 
                         <p className="hero__roles">
-                            <span>Full Stack Developer</span> · Data Privacy Engineer · Problem Solver
+                            <span>Full Stack Developer</span> · B.Tech IT Student
                         </p>
 
                         <p className="hero__desc">
-                            I build innovative, privacy-first web applications with a passion for clean code and
-                            beautiful interfaces. Specializing in React, Django, and Differential Privacy systems.
+                            Final-year B.Tech Information Technology student from Tamil Nadu with hands-on
+                            experience building full-stack web applications using Java, Spring Boot, React, and
+                            Django. Passionate about clean code, scalable systems, and solving real-world problems.
                         </p>
 
                         <div className="hero__actions">
@@ -63,7 +64,7 @@ export default function Hero() {
                                 }}
                             >
                                 <Code2 size={16} />
-                                View My Work
+                                View My Projects
                             </a>
                             <a
                                 href="#contact"
@@ -76,23 +77,6 @@ export default function Hero() {
                                 <Mail size={16} />
                                 Get In Touch
                             </a>
-                        </div>
-
-                        <div className="hero__stats">
-                            <div className="hero__stat">
-                                <div className="hero__stat-number">3+</div>
-                                <div className="hero__stat-label">Years Coding</div>
-                            </div>
-                            <div className="hero__stat-divider" />
-                            <div className="hero__stat">
-                                <div className="hero__stat-number">10+</div>
-                                <div className="hero__stat-label">Projects Built</div>
-                            </div>
-                            <div className="hero__stat-divider" />
-                            <div className="hero__stat">
-                                <div className="hero__stat-number">5+</div>
-                                <div className="hero__stat-label">Technologies</div>
-                            </div>
                         </div>
                     </div>
 
@@ -128,7 +112,7 @@ export default function Hero() {
                             <a href="https://www.linkedin.com/in/sarathy-m-098b6a291/" target="_blank" rel="noopener noreferrer" className="hero__social-btn" title="LinkedIn">
                                 <Linkedin size={16} />
                             </a>
-                            <a href="mailto:sarathymurugesan@gmail.com" className="hero__social-btn" title="Email">
+                            <a href="mailto:sarathyofficial90@gmail.com" className="hero__social-btn" title="Email">
                                 <Mail size={16} />
                             </a>
                         </div>

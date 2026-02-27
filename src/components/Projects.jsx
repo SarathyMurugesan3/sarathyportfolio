@@ -3,60 +3,60 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
     {
-        emoji: '🔏',
-        gradient: 'linear-gradient(135deg, #1a1040 0%, #2d1b69 100%)',
+        emoji: '🖥️',
+        gradient: 'linear-gradient(135deg, #0c1f15 0%, #1a3826 100%)',
         tags: [
-            { label: 'Python', color: '#3776AB', bg: 'rgba(55,118,171,0.15)' },
-            { label: 'Django', color: '#09d361', bg: 'rgba(9,211,97,0.12)' },
-            { label: 'React', color: '#61DAFB', bg: 'rgba(97,218,251,0.12)' },
+            { label: 'Spring Boot', color: '#6DB33F', bg: 'rgba(109,179,63,0.15)' },
+            { label: 'MySQL', color: '#4479A1', bg: 'rgba(68,121,161,0.13)' },
+            { label: 'Java', color: '#ED8B00', bg: 'rgba(237,139,0,0.13)' },
         ],
-        title: 'Differential Privacy System',
+        title: 'Dynamic Content Management System',
         desc:
-            'A full-stack web application for querying databases with differential privacy guarantees. Implements Laplace mechanism and sensitivity calibration for data anonymization.',
+            'A secure admin dashboard built with Spring Boot and Spring Security featuring role-based authentication. Implements full CRUD for Products, Testimonials, and Blog Posts with RESTful APIs integrated with MySQL.',
         github: 'https://github.com/SarathyMurugesan3',
         live: null,
     },
     {
-        emoji: '🛡️',
-        gradient: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)',
+        emoji: '🔏',
+        gradient: 'linear-gradient(135deg, #1c1208 0%, #3a240e 100%)',
         tags: [
             { label: 'Python', color: '#3776AB', bg: 'rgba(55,118,171,0.15)' },
-            { label: 'Flask', color: '#a8dadc', bg: 'rgba(168,218,220,0.12)' },
-            { label: 'ML', color: '#f4a261', bg: 'rgba(244,162,97,0.12)' },
+            { label: 'Django', color: '#09d361', bg: 'rgba(9,211,97,0.12)' },
+            { label: 'PostgreSQL', color: '#336791', bg: 'rgba(51,103,145,0.14)' },
         ],
-        title: 'Risk Analyzer Platform',
+        title: 'Privacy-Preserving Data Analytics Platform',
         desc:
-            'An intelligent risk assessment platform leveraging machine learning models and differential privacy outputs to visualize risk scores through interactive meter visualizations.',
+            'A secure analytics engine implementing ε-Differential Privacy using IBM diffprivlib. Features a Privacy Budget Ledger with sliding-window recovery and risk-adaptive noise injection, backed by Django and PostgreSQL.',
+        github: 'https://github.com/SarathyMurugesan3',
+        live: null,
+    },
+    {
+        emoji: '🔐',
+        gradient: 'linear-gradient(135deg, #1a1000 0%, #3d2800 100%)',
+        tags: [
+            { label: 'Spring Boot', color: '#6DB33F', bg: 'rgba(109,179,63,0.15)' },
+            { label: 'Java', color: '#ED8B00', bg: 'rgba(237,139,0,0.13)' },
+            { label: 'MySQL', color: '#4479A1', bg: 'rgba(68,121,161,0.13)' },
+        ],
+        title: 'Admin CRUD System',
+        desc:
+            'A dynamic Admin Panel Website where admins can edit landing page content & photos with secret access. Built with secure role-based authentication and full CRUD capabilities.',
         github: 'https://github.com/SarathyMurugesan3',
         live: null,
     },
     {
         emoji: '🌐',
-        gradient: 'linear-gradient(135deg, #0a0a0a 0%, #1a0533 100%)',
+        gradient: 'linear-gradient(135deg, #121110 0%, #2a1e0e 100%)',
         tags: [
             { label: 'React', color: '#61DAFB', bg: 'rgba(97,218,251,0.12)' },
-            { label: 'Vite', color: '#646CFF', bg: 'rgba(100,108,255,0.15)' },
-            { label: 'CSS', color: '#cc66ff', bg: 'rgba(204,102,255,0.12)' },
+            { label: 'Vite', color: '#e8a045', bg: 'rgba(232,160,69,0.14)' },
+            { label: 'CSS', color: '#c4a882', bg: 'rgba(196,168,130,0.12)' },
         ],
         title: 'Portfolio Website',
         desc:
-            'This very portfolio — a modern, responsive personal website built with React and Vite, featuring glassmorphism design, smooth animations, and GitHub Pages deployment.',
+            'This very portfolio — a modern, responsive personal website built with React and Vite, featuring smooth animations, minimal design, and GitHub Pages deployment.',
         github: 'https://github.com/SarathyMurugesan3/portfolio',
         live: 'https://SarathyMurugesan3.github.io/portfolio',
-    },
-    {
-        emoji: '📊',
-        gradient: 'linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)',
-        tags: [
-            { label: 'Django', color: '#09d361', bg: 'rgba(9,211,97,0.12)' },
-            { label: 'REST API', color: '#22d3ee', bg: 'rgba(34,211,238,0.12)' },
-            { label: 'SQLite', color: '#f4a261', bg: 'rgba(244,162,97,0.12)' },
-        ],
-        title: 'Data Anonymization API',
-        desc:
-            'A RESTful Django API backend offering dataset querying, anonymization controls, and differential privacy endpoints. Includes comprehensive documentation and error handling.',
-        github: 'https://github.com/SarathyMurugesan3',
-        live: null,
     },
 ];
 

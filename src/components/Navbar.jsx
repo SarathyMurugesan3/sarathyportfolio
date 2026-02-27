@@ -5,7 +5,6 @@ const links = [
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
-    { label: 'Experience', href: '#experience' },
     { label: 'Contact', href: '#contact' },
 ];
 
@@ -30,9 +29,8 @@ export default function Navbar() {
         <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
             <div className="container">
                 <div className="navbar__inner">
-                    <a href="#home" className="navbar__logo" onClick={(e) => handleNavClick(e, '#home')}>
-                        SM
-                    </a>
+                    <a href="#home" className="navbar__logo" onClick={(e) => handleNavClick(e, '#home')} />
+
                     <ul className={`navbar__links${menuOpen ? ' open' : ''}`}>
                         {links.map((l) => (
                             <li key={l.label}>
@@ -47,7 +45,7 @@ export default function Navbar() {
                                 className="navbar__cta"
                                 onClick={(e) => handleNavClick(e, '#contact')}
                             >
-                                Hire Me
+                                Let's Connect
                             </a>
                         </li>
                     </ul>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, GraduationCap, Briefcase, Coffee } from 'lucide-react';
+import { MapPin, GraduationCap, Briefcase, BookOpen } from 'lucide-react';
 
 const skills = {
     Frontend: [
@@ -7,34 +7,35 @@ const skills = {
         { name: 'JavaScript', color: '#F7DF1E' },
         { name: 'HTML5 / CSS3', color: '#E34F26' },
         { name: 'Tailwind CSS', color: '#06B6D4' },
-        { name: 'Vite', color: '#646CFF' },
     ],
     Backend: [
+        { name: 'Java', color: '#ED8B00' },
+        { name: 'Spring Boot', color: '#6DB33F' },
         { name: 'Python', color: '#3776AB' },
-        { name: 'Django', color: '#44b67a' },
-        { name: 'Django REST', color: '#ea6060' },
-        { name: 'Node.js', color: '#339933' },
-        { name: 'Flask', color: '#cccccc' },
+        { name: 'Django', color: '#09d361' },
+        { name: 'Node.js', color: '#8CC84B' },
     ],
-    'Data & Privacy': [
-        { name: 'Differential Privacy', color: '#6c63ff' },
-        { name: 'NumPy / Pandas', color: '#4dabcf' },
-        { name: 'SQL', color: '#F29111' },
+    'Database & Tools': [
+        { name: 'MySQL', color: '#4479A1' },
         { name: 'PostgreSQL', color: '#336791' },
-    ],
-    'Tools & DevOps': [
+        { name: 'MongoDB', color: '#47A248' },
         { name: 'Git / GitHub', color: '#F05032' },
-        { name: 'VS Code', color: '#007ACC' },
-        { name: 'REST APIs', color: '#22d3ee' },
-        { name: 'GitHub Actions', color: '#2088FF' },
+        { name: 'Postman', color: '#FF6C37' },
+    ],
+    'Core CS Concepts': [
+        { name: 'OOP', color: '#e8a045' },
+        { name: 'Data Structures & Algorithms', color: '#7ec8a4' },
+        { name: 'SOLID Principles', color: '#c4a882' },
+        { name: 'RESTful API Design', color: '#e8a045' },
+        { name: 'Differential Privacy', color: '#7ec8a4' },
     ],
 };
 
 const highlights = [
+    { icon: <GraduationCap size={14} />, text: 'B.Tech IT — Final Year (2025)' },
     { icon: <MapPin size={14} />, text: 'Tamil Nadu, India' },
-    { icon: <GraduationCap size={14} />, text: 'B.Sc Computer Science' },
-    { icon: <Briefcase size={14} />, text: 'Open to opportunities' },
-    { icon: <Coffee size={14} />, text: 'Coffee-driven developer' },
+    { icon: <Briefcase size={14} />, text: 'Seeking Internship / Full-time Roles' },
+    { icon: <BookOpen size={14} />, text: '4 Projects · Full Stack Focus' },
 ];
 
 export default function About() {
@@ -44,7 +45,7 @@ export default function About() {
                 <div className="section-header">
                     <span className="section__tag">About Me</span>
                     <h2 className="section__title">
-                        Crafting digital <span>experiences</span>
+                        A developer who <span>builds & learns</span>
                     </h2>
                 </div>
 
@@ -53,18 +54,20 @@ export default function About() {
                     <div>
                         <div className="about__text">
                             <p>
-                                I'm <strong>Sarathy Murugesan</strong>, a passionate Full Stack Developer and Data
-                                Privacy Engineer based in Tamil Nadu, India. I love turning complex problems into
-                                elegant, user-friendly digital solutions.
+                                I'm a <strong>final-year B.Tech Information Technology student</strong> from Tamil
+                                Nadu, India, passionate about building web applications that are both functional and
+                                well-crafted. I specialize in <strong>Java, Spring Boot, and React.js</strong>, with
+                                growing experience in Python and Django.
                             </p>
                             <p>
-                                My journey in tech has led me to work on everything from dynamic React frontends to
-                                privacy-preserving backend systems using Differential Privacy algorithms. I believe
-                                great software is not just functional — it's beautiful, fast, and trustworthy.
+                                My academic journey has given me a strong foundation in Data Structures & Algorithms,
+                                Object-Oriented Programming, and software design principles. I've applied these in
+                                real projects — from secure admin dashboards to <strong>privacy-preserving analytics
+                                    platforms</strong> using Differential Privacy techniques.
                             </p>
                             <p>
-                                When I'm not coding, you'll find me exploring new technologies, contributing to open
-                                source, or brewing the perfect cup of coffee.
+                                I'm actively looking for <strong>internship or entry-level opportunities</strong> where
+                                I can contribute, grow, and work alongside experienced engineers on meaningful products.
                             </p>
                         </div>
 

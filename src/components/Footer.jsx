@@ -9,8 +9,8 @@ export default function Footer() {
                 <div className="footer__inner">
                     <p className="footer__copy">
                         © {year} <span>Sarathy Murugesan</span>. Built with{' '}
-                        <Heart size={12} style={{ display: 'inline', color: '#6c63ff', verticalAlign: 'middle' }} />{' '}
-                        using React &amp; Vite.
+                        <Heart size={12} style={{ display: 'inline', color: '#e8a045', verticalAlign: 'middle' }} />{' '}
+                        using React &amp; Spring Boot.
                     </p>
                     <div className="footer__social">
                         <a
